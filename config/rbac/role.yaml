@@ -1,0 +1,33 @@
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  creationTimestamp: null
+  name: manager-role
+rules:
+- apiGroups:
+  - operators.jubril.xyz
+  resources:
+  - klustertraffics
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - operators.jubril.xyz
+  resources:
+  - klustertraffics/finalizers
+  verbs:
+  - update
+- apiGroups:
+  - operators.jubril.xyz
+  resources:
+  - klustertraffics/status
+  verbs:
+  - get
+  - patch
+  - update

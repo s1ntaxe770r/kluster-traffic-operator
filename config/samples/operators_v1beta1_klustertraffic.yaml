@@ -1,0 +1,12 @@
+apiVersion: operators.jubril.xyz/v1beta1
+kind: KlusterTraffic
+metadata:
+  labels:
+    app.kubernetes.io/name: klustertraffic
+    app.kubernetes.io/instance: klustertraffic-sample
+    app.kubernetes.io/part-of: kluster-traffic-operator
+    app.kuberentes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: kluster-traffic-operator
+  name: klustertraffic-sample
+spec:
+  # TODO(user): Add fields here

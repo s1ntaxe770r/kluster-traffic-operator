@@ -1,0 +1,16 @@
+domain: jubril.xyz
+layout:
+- go.kubebuilder.io/v3
+projectName: kluster-traffic-operator
+repo: github.com/s1ntaxe770r/kluster-traffic
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: jubril.xyz
+  group: operators
+  kind: KlusterTraffic
+  path: github.com/s1ntaxe770r/kluster-traffic/api/v1beta1
+  version: v1beta1
+version: "3"
